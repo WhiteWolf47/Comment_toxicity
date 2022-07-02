@@ -30,4 +30,4 @@ if st.button('Calculate Toxicicty'):
         st.title("Please enter a valid comment")
     else:
         res = score_comment(user_input)
-        st.subheader(res)
+        st.text(res)
