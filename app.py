@@ -16,8 +16,8 @@ def score_comment(comment):
 
     return text
 
-model = tf.keras.models.load_model(r'C:\Users\anura\PycharmProjects\pythonProject\venv\toxicity.h5')
-vmodel = tf.keras.models.load_model(r"C:\Users\anura\PycharmProjects\pythonProject\venv\vectorizer")
+model = tf.keras.models.load_model(r'toxicity.h5')
+vmodel = tf.keras.models.load_model(r"vectorizer")
 vectorizer = vmodel.layers[0]
 
 st.title('Comment Toxicity Calculator')
