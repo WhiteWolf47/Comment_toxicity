@@ -27,8 +27,7 @@ user_input = st.text_area("Enter Comment")
 
 if st.button('Calculate Toxicicty'):
     if user_input == "":
-        st.text("Please enter a valid comment")
+        st.title("Please enter a valid comment")
     else:
-        st.title('Toxic or non-Toxic')
         res = score_comment(user_input)
-        st.text(res)
+        st.title(res)
