@@ -12,7 +12,7 @@ def score_comment(comment):
 
     text = ''
     for idx, col in enumerate(t_params):
-        text += '{}: {}\n'.format(col, results[0][idx] > 0.5)
+        text += '{}: {}\n'.format(col.upper(), results[0][idx] > 0.5)
 
     return text
 
