@@ -21,8 +21,7 @@ vmodel = tf.keras.models.load_model(r"vectorizer")
 vectorizer = vmodel.layers[0]
 
 st.title('Comment Toxicity Calculator')
-st.write("Source Code -")
-st.hyperlink("https://github.com/WhiteWolf47/Comment_toxicity")
+st.write("[Source Code](https://github.com/WhiteWolf47/Comment_toxicity)")
 #st.image("https://wallpapercave.com/dwp1x/wp10935197.jpg")
 user_input = ""
 user_input = st.text_area("Enter Comment")
